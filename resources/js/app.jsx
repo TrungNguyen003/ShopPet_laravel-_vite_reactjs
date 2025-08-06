@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'; // Import
 import Header from './components/Header';
 import Footer from './components/Footer';
 
+
 const Home = () => <h1>Hello from React + Laravel 12 + Vite!</h1>;
 const About = () => <h1>About Shop Pet</h1>;
 
@@ -11,9 +12,6 @@ const App = () => (
     // Bao bọc ứng dụng trong BrowserRouter để kích hoạt định tuyến
     <BrowserRouter> 
         <Header />
-        <nav>
-            <Link to="/">Home</Link> | <Link to="/about">About</Link>
-        </nav>
         {/* Dịnh tuyến cơ bản */}
         <Routes>
             <Route path="/" element={<Home />} />
