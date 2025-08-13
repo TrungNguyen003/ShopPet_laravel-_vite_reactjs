@@ -3,17 +3,13 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'; // Importing React Router components
 import Header from './components/Header';
 import Footer from './components/Footer';
-
-const Home = () => <h1>Hello from React + Laravel 12 + Vite!</h1>;
-const About = () => <h1>About Shop Pet</h1>;
+import Home from './router/Home';
+import About from './router/About';
 
 const App = () => (
     // Bao bọc ứng dụng trong BrowserRouter để kích hoạt định tuyến
     <BrowserRouter> 
         <Header />
-        <nav>
-            <Link to="/">Home</Link> | <Link to="/about">About</Link>
-        </nav>
         {/* Dịnh tuyến cơ bản */}
         <Routes>
             <Route path="/" element={<Home />} />

@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Anton", sans-serif;
+    background-color: #f8f9fa;
+}
+
+header {
+    background-color: #fff;
+    z-index: 1000;
+}
+/* CSS tùy chỉnh - thêm vào file App.css hoặc tương đương */
+.nav-link {
+    color: #000 !important;
+    transition: all 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    background-color: #f8f9fa;
+}
+
+.nav-link.active {
+    font-weight: 600;
+    border-bottom: 3px solid #ed6436;
+}
+
+.btn_search {
+    background-color: #ed6436;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.btn_search:hover,
+.btn_search:focus {
+    background-color: #d55a2c;
+    color: #fff;
+}
+
+.btn_icon {
+    background-color: #fff;
+    color: #ed6436;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 40px;
+    height: 40px;
+}
+
+.btn_icon:hover,
+.btn_icon:focus {
+    background-color: #ed6436;
+    color: #fff;
+}
+
+.logo-shadow {
+    box-shadow: 10px 100px 182px -76px rgba(0, 0, 0, 1);
+    -webkit-box-shadow: 10px 100px 182px -76px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 10px 100px 182px -76px rgba(0, 0, 0, 1);
+}
+
+.search-overlay {
+    z-index: 1051;
+}
+
+/* hero image */
+/* .hero-image {
+    -webkit-mask-image: url(../image/home/Vector.svg);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    -webkit-mask-position: center;
+    width: calc(100% + 30px);
+} */
+
+.hero-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-image {
+    -webkit-mask-image: url(../image/home/download.svg);
+    -webkit-mask-position: right;
+    -webkit-mask-repeat: no-repeat;
+    width: -webkit-calc(50vw + 100px);
+    width: -moz-calc(50vw + 100px);
+    width: calc(50vw + 100px);
+}
+
+.title-hero {
+    color: #ed6436;
+}
+
+
+.icon-hero{
+    border-right: 1px solid #0c0b0b;
+    padding: 10px;
+}
