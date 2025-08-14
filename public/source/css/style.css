@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: "Anton", sans-serif;
+    font-family: "Baloo Bhaijaan 2", sans-serif;
     background-color: #f8f9fa;
 }
 
@@ -13,7 +13,8 @@ header {
     background-color: #fff;
     z-index: 1000;
 }
-/* CSS tùy chỉnh - thêm vào file App.css hoặc tương đương */
+
+/* home */
 .nav-link {
     color: #000 !important;
     transition: all 0.2s ease;
@@ -66,15 +67,12 @@ header {
     z-index: 1051;
 }
 
-/* hero image */
-/* .hero-image {
-    -webkit-mask-image: url(../image/home/Vector.svg);
-    -webkit-mask-repeat: no-repeat;
-    -webkit-mask-size: 100% 100%;
-    -webkit-mask-position: center;
-    width: calc(100% + 30px);
-} */
-
+.background-hero {
+    background-image: url(../image/home/background_01.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
 .hero-section {
     position: relative;
     overflow: hidden;
@@ -90,11 +88,124 @@ header {
 }
 
 .title-hero {
+    font-family: "Anton", sans-serif;
     color: #ed6436;
+    font-size: 5rem;
 }
 
-
-.icon-hero{
-    border-right: 1px solid #0c0b0b;
+.icon-hero {
+    border-right: 1px solid #ed6436;
+    width: 30%;
     padding: 10px;
 }
+
+.lead {
+    font-size: 1.3rem;
+}
+
+.slide-hero {
+    width: 60%;
+}
+
+.title-slide {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.description-slide {
+    font-size: 1.2rem;
+}
+
+.book-now {
+    padding: 10px 20px;
+    transform: rotate(-10deg);
+    transition: all 0.3s ease-in-out;
+}
+
+.book-now:hover,
+.book-now:focus {
+    transform: rotate(0deg) scale(1.05);
+}
+
+@media screen and (max-width: 991px) {
+    .hero-image {
+        width: calc(90vw + 100px);
+    }
+
+    .icon-hero {
+        width: 100%;
+        height: auto;
+    }
+
+    .slide-hero {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .hero-image {
+        width: calc(80vw + 100px);
+    }
+
+    .icon-hero {
+        width: 100%;
+        height: auto;
+    }
+
+    .slide-hero {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero-image {
+        width: calc(75vw + 100px);
+    }
+
+    .icon-hero {
+        width: 100%;
+        height: auto;
+    }
+
+    .slide-hero {
+        width: 100%;
+    }
+}
+
+.happy-image {
+    mask-image: url(../image/home/download2.svg);
+    mask-position: right;
+    mask-repeat: no-repeat;
+}
+
+.swiper-pagination {
+    justify-content: flex-start !important;
+    left: 0 !important;
+    right: auto !important;
+    text-align: left !important;
+    width: 100%;
+    display: flex !important;
+    align-items: center;
+    position: absolute;
+    bottom: 10px; /* hoặc vị trí bạn muốn */
+    padding-left: 16px; /* cách lề trái */
+}
+
+.swiper-pagination-bullet {
+    width: 12px !important;
+    height: 12px !important;
+    background: #ed6436 !important;
+    opacity: 0.5;
+    margin: 0 4px !important;
+    transition: all 0.3s;
+    justify-content: flex-start !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: #222;
+    opacity: 1;
+    transform: scale(1.2);
+    box-shadow: 0 2px 8px rgba(237, 100, 54, 0.2);
+}
+/* end home */
