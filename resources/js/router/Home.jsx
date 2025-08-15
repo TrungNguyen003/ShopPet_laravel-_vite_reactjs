@@ -6,7 +6,7 @@ const Home = () => {
         <>
             <div className="bg-header">
                 <div className="container">
-                    <div className="text-nav banner-text d-flex justify-content-center flex-column fs-1 text-white text-shadow-dark">
+                    <div className="text-nav banner-text d-flex justify-content-center flex-column  text-white text-shadow-dark">
                         <span>
                             Cung cấp cho thú cưng của bạn,
                         </span>
@@ -341,7 +341,5 @@ const Home = () => {
             </div>
         </>
     );
-};
-
-
+};       
 export default Home;

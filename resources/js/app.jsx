@@ -5,6 +5,7 @@ import Header from './components/header';
 import Footer from './components/footer';
 import Home from './router/Home';
 import About from './router/About';
+import Introduce from './router/introduce';
 
 
 const App = () => (
@@ -15,6 +16,7 @@ const App = () => (
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path="/introduce" element={<Introduce />} /> {/* Đổi chữ hoa */}
         </Routes>
         <Footer />
     </BrowserRouter>

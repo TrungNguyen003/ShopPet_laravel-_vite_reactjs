@@ -2,33 +2,42 @@
 /* body{
      font-family: "Anton", sans-serif;
 } */
-.color-header{
-    background-color: #C5BAFF;
-}
 .color-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
+  background-color: #C5BAFF;
 }
+
+.color-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
 body {
-    padding-top: 80px; /* hoặc đúng chiều cao header của bạn */
+  padding-top: 80px;
+  /* hoặc đúng chiều cao header của bạn */
 }
-.logo{
-    padding: 10px;;
+
+.logo {
+  padding: 10px;
+  ;
 }
+
 .text-title:hover {
   color: white !important;
   text-decoration: none;
   border-bottom: 2.5px solid white;
 }
-.text-shop{
-    font-size:25px;
+
+.text-shop {
+  font-size: 25px;
 }
-.text-title{
-      font-family: "Anton", sans-serif;
+
+.text-title {
+  font-family: "Anton", sans-serif;
 }
+
 /* Footer link hover trắng */
 a.text-dark:hover {
   color: white !important;
@@ -36,11 +45,12 @@ a.text-dark:hover {
 
 /* footer */
 
-.color-footer{
-    background-color: #C5BAFF;
+.color-footer {
+  background-color: #C5BAFF;
 }
-.text-footer{
-    font-family: bold;
+
+.text-footer {
+  font-family: bold;
 }
 
 .footer-section {
@@ -48,55 +58,131 @@ a.text-dark:hover {
   min-width: 200px;
   margin: 10px;
 }
+
 .footer ul li a:hover {
   color: white;
 }
-.text-document{
-      font-family: "Anton", sans-serif;
+
+.text-document {
+  font-family: "Anton", sans-serif;
 }
+
 .footer-section1 ul {
-  list-style: none; /* Xoá dấu chấm */
-  padding: 0;       /* Xoá khoảng cách thụt trái */
+  list-style: none;
+  /* Xoá dấu chấm */
+  padding: 0;
+  /* Xoá khoảng cách thụt trái */
   margin: 0;
 }
 
 
 /* home */
 
-.bg-header{
-    background-image: url(../source/anhbg.png);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+.bg-header {
+  background-image: url(../source/anhbg.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
 }
-.bg-pet{
+
+.text-nav {
+  font-size: 2rem;
+}
+
+.banner-text {
+  width: 50%;
+  height: auto; 
+  border-radius: 20px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+@media (max-width: 992px) {
+  .banner-text {
+    width: 90%;
+    padding: 20px 10px;
+    font-size: 1.1rem;
+    margin: 0 auto;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner-text {
+    width: 98%;
+    padding: 10px 5px;
+    font-size: 1rem;
+    margin: 0 auto;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+      text-align: left;
+  }
+}
+
+/* @media (max-width: 992px) {
+  .bg-header {
+    height: 50vh;
+
+  }
+  .banner-text {
+    height: 20vh;
+    font-size: 1.2rem;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 769px) {
+  .bg-header {
+    height: 10vh;
+    background-size: cover;
+    background-position: top;
+  }
+  .banner-text {
+    width: 98%;
+    padding: 10px 5px;
+    font-size: 1rem;
+    margin: 0 auto;
+  }
+} */
+.bg-pet {
   background-color: #C4D9FF;
   border-radius: 10px;
 
 }
 
-.banner-text{
-    width: 50%;
-    height: 100vh;
+.banner-text {
+  width: 50%;
+  height: 100vh;
 }
 
 .text-shadow-dark {
-    text-shadow: 2px 2px 6px #000;
+  text-shadow: 2px 2px 6px #000;
 }
+
 .img-pet {
   animation: floot-yarn 3s ease-in-out infinite;
 }
+
 @keyframes floot-yarn {
   0% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-20px);
   }
+
   100% {
     transform: translateY(0);
   }
 }
+
 .view-product h5 {
   background-color: #C5BAFF;
   color: #fff;
@@ -105,7 +191,7 @@ a.text-dark:hover {
   transition: all 0.3s;
   cursor: pointer;
   width: 30%;
-  text-shadow: none; 
+  text-shadow: none;
 }
 
 .view-product h5:hover {
@@ -113,10 +199,11 @@ a.text-dark:hover {
   color: #6f42c1;
 }
 
-.img-pet{
+.img-pet {
   width: 65%;
   height: 65%;
 }
+
 .section-title {
   position: relative;
   display: inline-block;
@@ -143,18 +230,23 @@ a.text-dark:hover {
 .section-title::after {
   margin-left: 12px;
 }
-.img-teritory{
+
+.img-teritory {
   border-radius: 15px;
 }
-.color-product{
+
+.color-product {
   background-color: #C5BAFF;
-  border-radius: 20px;;
+  border-radius: 20px;
+  ;
 }
-.bg-product{
+
+.bg-product {
   background-color: white;
   padding: 10px;
   border-radius: 5px;
 }
+
 .bg-product img {
   transition: transform 0.3s;
 }
@@ -171,17 +263,21 @@ a.text-dark:hover {
 .text-news:hover img {
   transform: scale(1.08);
 }
+
 .text-news {
-  overflow: hidden; /* Giữ ảnh trong khung khi phóng to */
+  overflow: hidden;
+  /* Giữ ảnh trong khung khi phóng to */
 }
 
-.money{
-  color:#6f42c1
+.money {
+  color: #6f42c1
 }
-.product-pet{
-  box-shadow: 2px 2px 4px #a8a8a8  ;
+
+.product-pet {
+  box-shadow: 2px 2px 4px #a8a8a8;
   border-radius: 5px;
 }
+
 .button-detail {
   border-radius: 10px;
   background-color: white;
@@ -192,17 +288,26 @@ a.text-dark:hover {
   color: #6f42c1;
   cursor: pointer;
   border: #C5BAFF solid 1px;
-  
+
 }
 
 .button-detail:hover {
   background-color: #C5BAFF;
   color: white;
 
-  
+
 }
-.text-news{
+
+.text-news {
   box-shadow: #b3afaf 2px 2px 4px;
   border-radius: 5px;
 }
 
+
+/* Trang introduce */
+
+.text-main{
+  background-color: #C4D9FF;
+  border-radius: 20px;
+  margin-bottom: 4rem;
+}
