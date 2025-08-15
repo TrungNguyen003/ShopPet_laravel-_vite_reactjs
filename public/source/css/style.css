@@ -6,7 +6,7 @@
 
 body {
     font-family: "Baloo Bhaijaan 2", sans-serif;
-    background-color: #f8f9fa;
+    background-color: #ffff;
 }
 
 header {
@@ -131,17 +131,14 @@ header {
     .hero-image {
         width: calc(90vw + 100px);
     }
-
     .icon-hero {
-        width: 100%;
         height: auto;
+        border: none;
     }
-
     .slide-hero {
         width: 100%;
     }
 }
-
 
 @media screen and (max-width: 800px) {
     .hero-image {
@@ -149,7 +146,6 @@ header {
     }
 
     .icon-hero {
-        width: 100%;
         height: auto;
     }
 
@@ -171,12 +167,6 @@ header {
     .slide-hero {
         width: 100%;
     }
-}
-
-.happy-image {
-    mask-image: url(../image/home/download2.svg);
-    mask-position: right;
-    mask-repeat: no-repeat;
 }
 
 .swiper-pagination {
@@ -208,4 +198,261 @@ header {
     transform: scale(1.2);
     box-shadow: 0 2px 8px rgba(237, 100, 54, 0.2);
 }
+
+.happy {
+    overflow: hidden;
+}
+
+.happy-image {
+    position: relative;
+}
+
+.happy-image-content {
+    mask-image: url(../image/home/download2.svg);
+    mask-repeat: no-repeat;
+    -webkit-mask-position: left;
+    mask-position: center;
+    margin-left: -30px;
+    width: -webkit-calc(100% + 30px);
+    width: -moz-calc(100% + 30px);
+    width: calc(100% + 30px);
+}
+
+.title-happy {
+    font-family: "Anton", sans-serif;
+    color: #ed6436;
+    font-size: 4rem;
+}
+
+.description-happy {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 20px;
+    width: 70%;
+}
+
+@keyframes float-water {
+    0% {
+        transform: translate(25%, -80%);
+    }
+    50% {
+        transform: translate(25%, -100%);
+    }
+    100% {
+        transform: translate(25%, -80%);
+    }
+}
+
+.water-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(25%, -80%);
+    width: 30%;
+    height: auto;
+    pointer-events: none;
+    z-index: 2;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.705));
+    animation: float-water 4s ease-in-out infinite;
+}
+
+@keyframes float-yarn {
+    0% {
+        transform: translate(-80%, -50%);
+    }
+    50% {
+        transform: translate(-100%, -50%);
+    }
+    100% {
+        transform: translate(-80%, -50%);
+    }
+}
+
+.yarn-ball {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-100%, -50%);
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.705));
+    animation: float-yarn 3s ease-in-out infinite;
+}
+
+.btn-booknow {
+    background-color: #ed6436;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    font-weight: 600;
+}
+
+.btn-booknow:hover {
+    background-color: #d55a2c;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.title-danh-muc {
+    font-family: "Anton", sans-serif;
+    color: #ed6436;
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.line-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    width: 100%;
+    margin: 32px 0;
+}
+
+.line-right,
+.line-left {
+    flex: 1 1 0;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #ed6436;
+    max-width: 200px;
+}
+
+.icon-logo {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(237, 100, 54, 0.15);
+}
+
+.dog-food {
+    background-color: #ed6436;
+}
+
+.img-dogfood {
+    width: 30vh;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10px;
+}
 /* end home */
+
+.content__item {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    counter-increment: itemcounter;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 2rem;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.content__item::before {
+    color: var(--color-number);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.button {
+    pointer-events: auto;
+    cursor: pointer;
+    background: #e7e7e7;
+    border: none;
+    padding: 1.5rem 3rem;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    position: relative;
+    display: inline-block;
+}
+
+.button::before,
+.button::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.button--janus {
+    font-family: freight-display-pro, serif;
+    font-weight: 900;
+    width: 90%;
+    height: 150px;
+    color: #fff;
+    background: none;
+}
+
+.button--janus::before {
+    content: "";
+    background: #ed6436;
+    -webkit-clip-path: path(
+        "M185.4,106.2 C157.2,136.2 75,132 36,107.4 C-3,82.8 -4.2,50.4 5.4,30.6 C15,10.8 40.2,-7.2 102,4.2 C163.8,15.6 213.6,76.2 185.4,106.2 Z"
+    );
+    clip-path: path(
+        "M185.4,106.2 C157.2,136.2 75,132 36,107.4 C-3,82.8 -4.2,50.4 5.4,30.6 C15,10.8 40.2,-7.2 102,4.2 C163.8,15.6 213.6,76.2 185.4,106.2 Z"
+    );
+    transition: clip-path 0.5s cubic-bezier(0.585, 2.5, 0.645, 0.55),
+        -webkit-clip-path 0.5s cubic-bezier(0.585, 2.5, 0.645, 0.55),
+        background 0.5s ease;
+}
+
+.button--janus:hover::before {
+    background: #000;
+    -webkit-clip-path: path(
+        "M171.6,92.4 C140.4,115.2 88.8,120.6 54.6,109.8 C20.4,99 -12.6,68.4 6.6,37.8 C25.8,7.2 94.8,-6.6 156.6,4.8 C218.4,16.2 202.8,69.6 171.6,92.4 Z"
+    );
+    clip-path: path(
+        "M171.6,92.4 C140.4,115.2 88.8,120.6 54.6,109.8 C20.4,99 -12.6,68.4 6.6,37.8 C25.8,7.2 94.8,-6.6 156.6,4.8 C218.4,16.2 202.8,69.6 171.6,92.4 Z"
+    );
+}
+
+.button--janus::after {
+    content: "";
+    height: 86%;
+    width: 97%;
+    top: 5%;
+    border-radius: 58% 42% 55% 45% / 56% 45% 55% 44%;
+    border: 1px solid #000;
+    transform: rotate(-20deg);
+    z-index: -1;
+    transition: transform 0.5s cubic-bezier(0.585, 2.5, 0.645, 0.55);
+}
+
+.button--janus:hover::after {
+    transform: translate3d(0, -5px, 0);
+}
+
+.button--janus span {
+    position: relative;
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #000;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), color 0.3s;
+}
+
+.button--janus:hover span {
+    transform: translateY(-16px) scale(1.1);
+    color: #fff;
+    text-shadow: 0 8px 24px rgba(237, 100, 54, 0.3);
+}

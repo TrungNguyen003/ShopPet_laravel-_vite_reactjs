@@ -1,11 +1,14 @@
 import react from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 const Home = () => {
+    const [isHovered, setIsHovered] = useState(false);
+
     return (
         <>
             <section className=" background-hero">
@@ -90,7 +93,7 @@ const Home = () => {
                                         </Swiper>
                                     </div>
 
-                                    <div>
+                                    <div className="pb-4">
                                         <div className="book-now">
                                             <a href="#">
                                                 <img
@@ -119,26 +122,117 @@ const Home = () => {
 
             {/* Happy */}
             <section>
-                <div className="container">
+                <div className="happy">
                     <div className="row">
-                        <div className="col-6">
+                        <div className="col-12 col-lg-6">
                             <div className="happy-image">
-                                <img
-                                    src="/source/image/home/hero_image_02.png"
-                                    alt="Happy Pet"
-                                    className="w-100"
-                                />
+                                <div className="happy-image-content">
+                                    <img
+                                        src="/source/image/home/hero_image_02.png"
+                                        alt="Happy Pet"
+                                        className="w-100"
+                                    />
+                                </div>
+                                <div className="water-image">
+                                    <img
+                                        src="/source/image/icon/water.png"
+                                        alt="Happy Pet"
+                                        className="w-100"
+                                    />
+                                </div>
+                                <div className="yarn-ball">
+                                    <img
+                                        src="/source/image/icon/yarn-ball.png"
+                                        alt="Yarn Ball"
+                                        className="w-100"
+                                    />
+                                </div>
                             </div>
                         </div>
-                        <div className="col-6">
-                            <h2 className="title-happy">
-                                Happy Pet, Happy You
-                            </h2>
-                            <p className="description-happy">
-                                Chúng tôi cung cấp dịch vụ chăm sóc thú cưng
-                                chuyên nghiệp và tận tâm.
-                            </p>
+                        <div className="col-12 col-lg-6">
+                            <div className="text-happy w-100 h-100 d-flex flex-column justify-content-center ">
+                                <h2 className="title-happy w-75 mx-auto">
+                                    Chúng ta có thể giữ{" "}
+                                    <span className="text-dark">
+                                        cho họ hạnh phúc
+                                    </span>
+                                </h2>
+                                <div className="description-happy w-75 mx-auto">
+                                    <p className=" ">
+                                        Từ lúc bạn bè chúng ta đánh hơi đường
+                                        vào cửa vào buổi sáng cho đến khi chúng
+                                        vẫy cái đuôi mệt mỏi nhưng thỏa mãn vào
+                                        buổi chiều, chúng ta hãy chiều theo bản
+                                        chất của chúng.
+                                    </p>
+                                </div>
+                                <div className="d-flex justify-content-start align-items-center mt-3 w-75 mx-auto">
+                                    <a
+                                        href="#"
+                                        className="text-decoration-none  text-white btn-booknow "
+                                    >
+                                        Book Now
+                                    </a>
+                                </div>
+                            </div>
                         </div>
+                    </div>
+                </div>
+            </section>
+            {/*  */}
+            <section className="danh-muc">
+                <div className="container">
+                    <div>
+                        <h2 className="text-center title-danh-muc">
+                            <span className="text-dark"> Danh mục</span> sản
+                            phẩm
+                        </h2>
+                    </div>
+                    <div className="line-icon d-flex justify-content-center align-items-center">
+                        <div className="line-right d-flex justify-content-end "></div>
+                        <div className="icon-logo">
+                            <img
+                                src="/source/image/logo/logo.png"
+                                alt=""
+                                className="w-100"
+                            />
+                        </div>
+                        <div className="line-left"></div>
+                    </div>
+                    <div
+                        className="danh-muc-content h-100 w-100"
+                        style={{ minWidth: 0 }}
+                    >
+                        <Swiper
+                            spaceBetween={10}
+                            slidesPerView={1}
+                            loop={true}
+                            autoplay={{ delay: 3000 }}
+                            pagination={{ clickable: true }}
+                            modules={[Pagination]}
+                            style={{ width: "100%", padding: "20px 0" }}
+                            breakpoints={{
+                                576: { slidesPerView: 2 },
+                                768: { slidesPerView: 2 },
+                                992: { slidesPerView: 4 },
+                            }}
+                        >
+                            <SwiperSlide>
+                                <div class="content__item">
+                                    <button
+                                        className="button button--janus"
+                                        onMouseEnter={() => setIsHovered(true)}
+                                        onMouseLeave={() => setIsHovered(false)}
+                                    >
+                                        <span>
+                                            {isHovered
+                                                ? "Đã đổi nội dung!"
+                                                : "Reshape"}
+                                        </span>
+                                    </button>
+                                </div>
+                            </SwiperSlide>
+                        </Swiper>
                     </div>
                 </div>
             </section>

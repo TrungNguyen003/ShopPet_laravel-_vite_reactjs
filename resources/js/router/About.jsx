@@ -6,6 +6,8 @@ const About = () => {
             <h1>About Us</h1>
             <p>Welcome to Shop Pet, your go-to place for all pet supplies!</p>
         </div>
+        
+        
     );
 }
 

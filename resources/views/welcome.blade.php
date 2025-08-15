@@ -6,6 +6,7 @@
     <title>Laravel + React</title>
     @viteReactRefresh
     @vite(['resources/js/app.jsx'])
+    <link rel="icon" href="{{ asset('/source/image/logo/logo.png') }}" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
