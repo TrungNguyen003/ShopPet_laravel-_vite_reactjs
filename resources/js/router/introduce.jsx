@@ -3,11 +3,41 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 const introduce = () => {
     return (
+
         <>
+
             <div className="text-center p-4">
                 <h2 className=" section-title"> Giới Thiệu </h2>
             </div>
-            <div className="container">
+            <div className="container bg-like-pet ">
+                <div className="row ">
+                    <div className="col-sm-12 col-md-12 col-lg-4">
+                        <div className=" text-end">
+                            <h4>Cung Cấp Sản Phẩm Với <br /> Mức Giá Phải Chăng</h4>
+                            <p className="text-end">Ngoài các yếu tố về chất lượng sản phẩm cửa hàng uy <br /> tín, chuyên nghiệp cần mang đến sản phẩm với mức <br /> giá cả phải chăng đến khách hàng.</p>
+                        </div>
+                        <div className="text-end">
+                            <h4>Nhân Viên Tư Vấn Nhiệt <br /> Tình, Am Hiểu Thú Cưng</h4>
+                            <p className="text-end">Bên cạch các sản phẩm cung cấp đến khách hàng bạn <br /> có thể căn cứ vào thái độ của nhân viên để đánh giá <br /> cửa hàng uy tín.</p>
+                        </div>
+                    </div>
+                    <div className="col-sm-12 col-md-12 col-lg-4">
+                        <img src="/source/imgpet.png" alt="" className=" w-100 like-pet" />
+                    </div>
+                    <div className="col-sm-12 col-md-12 col-lg-4">
+                        <div className=" ">
+                            <h4>Cung Cấp Sản Phẩm Với <br /> Mức Giá Phải Chăng</h4>
+                            <p className="text-start">Ngoài các yếu tố về chất lượng sản phẩm cửa hàng uy <br /> tín, chuyên nghiệp cần mang đến sản phẩm với mức <br /> giá cả phải chăng đến khách hàng.</p>
+                        </div>
+                        <div className="">
+                            <h4>Nhân Viên Tư Vấn Nhiệt <br /> Tình, Am Hiểu Thú Cưng</h4>
+                            <p className="text-start">Bên cạch các sản phẩm cung cấp đến khách hàng bạn <br /> có thể căn cứ vào thái độ của nhân viên để đánh giá <br /> cửa hàng uy tín.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="container mt-5">
                 <div className="text-main p-4">
                     <div className="text-center" >
                         <h4>Câu chuyện của chúng tôi </h4>

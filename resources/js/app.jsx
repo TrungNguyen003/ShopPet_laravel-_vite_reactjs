@@ -6,6 +6,8 @@ import Footer from './components/footer';
 import Home from './router/Home';
 import About from './router/About';
 import Introduce from './router/introduce';
+import News from './router/news'; 
+import Detailnew from './router/detailnew'; // Importing the Detailnew component
 
 
 const App = () => (
@@ -16,7 +18,9 @@ const App = () => (
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/introduce" element={<Introduce />} /> {/* Đổi chữ hoa */}
+            <Route path="/introduce" element={<Introduce />} />
+            <Route path="/news" element={<News />} />
+            <Route path="/detailnew" element={<Detailnew />} />
         </Routes>
         <Footer />
     </BrowserRouter>

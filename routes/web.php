@@ -12,3 +12,9 @@ Route::get('/introduce', function () {
 Route::get('/about', function () {
     return view('welcome');
 });
+Route::get('/news', function () {
+    return view('welcome');
+});
+Route::get('/detailnew', function () {
+    return view('welcome');
+});
