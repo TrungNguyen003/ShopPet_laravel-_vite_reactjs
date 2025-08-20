@@ -18,3 +18,6 @@ Route::get('/news', function () {
 Route::get('/detailnew', function () {
     return view('welcome');
 });
+Route::get('/detailproduct', function () {
+    return view('welcome');
+});

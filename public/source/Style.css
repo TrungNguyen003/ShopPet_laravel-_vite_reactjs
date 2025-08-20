@@ -362,3 +362,25 @@ a.text-dark:hover {
 .text-color{
   color: black;
 }
+
+.text-color:hover{
+  color: #C5BAFF;
+}
+
+/* Chi tieets sản phẩm */
+
+
+.item-product {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: #00000069 2px 2px 4px;
+}
+
+.item-product img {
+  transition: transform 0.3s;
+}
+
+.item-product:hover img {
+  transform: scale(1.08);
+}

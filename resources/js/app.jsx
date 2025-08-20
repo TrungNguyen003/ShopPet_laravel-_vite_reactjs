@@ -9,6 +9,7 @@ import Introduce from './router/introduce';
 import News from './router/news'; 
 import Detailnew from './router/detailnew'; // Importing the Detailnew component
 
+import Detailproduct from './router/detailproduct';
 
 const App = () => (
     // Bao bọc ứng dụng trong BrowserRouter để kích hoạt định tuyến
@@ -21,6 +22,7 @@ const App = () => (
             <Route path="/introduce" element={<Introduce />} />
             <Route path="/news" element={<News />} />
             <Route path="/detailnew" element={<Detailnew />} />
+             <Route path="/detailproduct" element={<Detailproduct />} />
         </Routes>
         <Footer />
     </BrowserRouter>

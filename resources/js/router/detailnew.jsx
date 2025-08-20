@@ -4,12 +4,12 @@ const Detailnew = () => {
         <>
             <div className="container ">
                 <div className="text-center ">
-                            <h2 className=" section-title">🐶 Cách Chăm Sóc và Sơ Cứu Thú Cưng Khi Bị Ốm 🐱</h2>
-                            <p className="time">ĐÃ ĐĂNG TRÊN 10 tháng trước</p>
-                        </div>
+                    <h2 className=" section-title">🐶 Cách Chăm Sóc và Sơ Cứu Thú Cưng Khi Bị Ốm 🐱</h2>
+                    <p className="time">ĐÃ ĐĂNG TRÊN 10 tháng trước</p>
+                </div>
                 <div className="row">
                     <div className="col-sm-12 col-md-9 col-lg-9">
-                        
+
                         <div className="mt-5 main-detailnews">
                             <h5 className="text-detailnews">Giới thiệu</h5>
                             <p className="text-detailnews1">Thú cưng dù là chó, mèo hay các loài nhỏ hơn khi bị ốm đều trở nên yếu đuối,
@@ -51,10 +51,10 @@ const Detailnew = () => {
                                 <ul>
                                     <li>  <a href="" className="text-decoration-none text-color"> khi thú cưng của bạn ốm cần sơ cứu như nào ?</a> </li>
                                 </ul>
-                                 <ul>
+                                <ul>
                                     <li>  <a href="" className="text-decoration-none text-color"> khi LONG thú cưng của bạn ốm cần sơ cứu như nào ?</a> </li>
                                 </ul>
-                                 <ul>
+                                <ul>
                                     <li>  <a href="" className="text-decoration-none text-color"> Khi Long bị ny bỏ thì làm như nào để vui lên  ?</a> </li>
                                 </ul>
                             </div>
