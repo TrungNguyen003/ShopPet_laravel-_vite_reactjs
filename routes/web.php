@@ -21,3 +21,9 @@ Route::get('/detailnew', function () {
 Route::get('/detailproduct', function () {
     return view('welcome');
 });
+Route::get('/login', function () {
+    return view('welcome');
+});
+Route::get('/detail', function () {
+    return view('welcome');
+});

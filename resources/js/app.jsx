@@ -6,10 +6,11 @@ import Footer from './components/footer';
 import Home from './router/Home';
 import About from './router/About';
 import Introduce from './router/introduce';
-import News from './router/news'; 
+import News from './router/news';
 import Detailnew from './router/detailnew'; // Importing the Detailnew component
-
+import Login from './router/login';
 import Detailproduct from './router/detailproduct';
+import Detail from './router/detail';
 
 const App = () => (
     // Bao bọc ứng dụng trong BrowserRouter để kích hoạt định tuyến
@@ -22,7 +23,9 @@ const App = () => (
             <Route path="/introduce" element={<Introduce />} />
             <Route path="/news" element={<News />} />
             <Route path="/detailnew" element={<Detailnew />} />
-             <Route path="/detailproduct" element={<Detailproduct />} />
+            <Route path="/detailproduct" element={<Detailproduct />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/detail" element={<Detail />} />
         </Routes>
         <Footer />
     </BrowserRouter>

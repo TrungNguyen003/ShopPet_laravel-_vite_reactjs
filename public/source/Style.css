@@ -384,3 +384,63 @@ a.text-dark:hover {
 .item-product:hover img {
   transform: scale(1.08);
 }
+
+
+/* LOGIN */
+
+.bg-login{
+  background-color:#C4D9FF;
+}
+
+.text-login{
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+ 
+}
+
+.color-button{
+ background-color: #C5BAFF;
+}
+
+.color-button:hover{
+  
+  background-color: #A393FA;
+}
+
+.color-button {
+  border-radius: 5px;
+  
+}
+
+/* detail */
+
+/* Nút chọn size */
+.btn-size {
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  padding: 6px 15px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+/* Nút chính */
+.btn-custom {
+  background-color: #A393FA !important;
+  color: #fff !important;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.btn-custom:hover {
+  background-color: #8a74f5 !important; 
+}
+
+/* Tab dưới */
+.tab-active {
+  border-bottom: 3px solid #A393FA;
+  padding-bottom: 5px;
+  color: #333;
+  cursor: pointer;
+}
