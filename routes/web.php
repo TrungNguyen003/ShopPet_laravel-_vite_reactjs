@@ -27,3 +27,9 @@ Route::get('/login', function () {
 Route::get('/detail', function () {
     return view('welcome');
 });
+Route::get('/cart', function () {
+    return view('welcome');
+});
+Route::get('/pay', function () {
+    return view('welcome');
+});

@@ -11,7 +11,8 @@ import Detailnew from './router/detailnew'; // Importing the Detailnew component
 import Login from './router/login';
 import Detailproduct from './router/detailproduct';
 import Detail from './router/detail';
-
+import Cart from './router/Cart';
+import Pay from './router/pay';
 const App = () => (
     // Bao bọc ứng dụng trong BrowserRouter để kích hoạt định tuyến
     <BrowserRouter>
@@ -26,6 +27,8 @@ const App = () => (
             <Route path="/detailproduct" element={<Detailproduct />} />
             <Route path="/login" element={<Login />} />
             <Route path="/detail" element={<Detail />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/pay" element={<Pay />} />
         </Routes>
         <Footer />
     </BrowserRouter>

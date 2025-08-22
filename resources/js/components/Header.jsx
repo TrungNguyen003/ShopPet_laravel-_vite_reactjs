@@ -19,7 +19,11 @@ const Header = () => (
                             <i className="bi bi-telephone-fill me-1"></i>
                             <span>0867545657</span>
                         </div>
-                        <i className="bi bi-cart3 fs-5"></i>
+                        <a href="/cart" className='text-decoration-none text-dark'>
+                          <i className="bi bi-cart3 fs-5"> </i>  
+                          <span class="position-absolute  translate-middle badge rounded-pill bg-danger">3</span>
+                        </a>
+                        
                         <i className="bi bi-search fs-5"></i>
                     </div>
                 </div>
