@@ -184,7 +184,7 @@ const Header = () => {
                                 </span>
                             </Link>
                             <Link
-                                to="/account"
+                                to="/login"
                                 className="btn btn_icon d-flex align-items-center justify-content-center"
                             >
                                 <i className="bi bi-person"></i>
